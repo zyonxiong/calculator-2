@@ -21,7 +21,17 @@ while True:
     elif token[0] == "+":
         result = new_list[0] + new_list[1]
     elif token[0] == "-":
-        result = token[0] + token[1]
+        result = new_list[0] - new_list[1]
+    elif token[0] == "/":
+        result = new_list[0] / new_list[1]
+    elif token[0] == "*":
+        result = new_list[0] * new_list[1]
+    elif token[0] == "square":
+        result = new_list[0] ** new_list[0]
+    elif token[0] == "pow":
+        result = new_list[0] ** new_list[1]
+    elif token[0] == "mod":
+        result = new_list[0] % new_list[1]    
     else:
             print("Not valid, try again.")
     print(result)
